@@ -37,7 +37,7 @@ def test_moodle_login(driver):
     password = WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="password"]'))
     )
-    password.send_keys("Qa123456")
+    password.send_keys("")
 
     # Wait for the login button to be clickable and then click it
     login = WebDriverWait(driver, 30).until(
